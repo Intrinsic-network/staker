@@ -1,0 +1,47 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+pragma solidity =0.7.6;
+
+import '@intrinsic-network/periphery/contracts/interfaces/INonfungiblePositionManager.sol';
+import '@intrinsic-network/core/contracts/interfaces/IIntrinsicFactory.sol';
+import '@intrinsic-network/core/contracts/interfaces/IIntrinsicPool.sol';
+
+import '@intrinsic-network/periphery/contracts/libraries/PoolAddress.sol';
+
+/// @notice Encapsulates the logic for getting info about a NFT token ID
+library NFTPositionInfo {
+    /// @param factory The address of the Intrinsic Factory used in computing the pool address
+    /// @param nonfungiblePositionManager The address of the nonfungible position manager to query
+    /// @param tokenId The unique identifier of an Intrinsic LP token
+    /// @return pool The address of the Intrinsic pool
+    /// @return tickLower The lower tick of the Intrinsic position
+    /// @return tickUpper The upper tick of the Intrinsic position
+    /// @return liquidity The amount of liquidity staked
+    function getPositionInfo(
+        IIntrinsicFactory factory,
+        INonfungiblePositionManager nonfungiblePositionManager,
+        uint256 tokenId
+    )
+        internal
+        view
+        returns (
+            IIntrinsicPool pool,
+            int24 tickLower,
+            int24 tickUpper,
+            uint128 liquidity
+        )
+    {
+        address token0;
+        address token1;
+        uint24 fee;
+        (, , token0, token1, fee, tickLower, tickUpper, liquidity, , , , ) = nonfungiblePositionManager.positions(
+            tokenId
+        );
+
+        pool = IIntrinsicPool(
+            PoolAddress.computeAddress(
+                address(factory),
+                PoolAddress.PoolKey({token0: token0, token1: token1, fee: fee})
+            )
+        );
+    }
+}
