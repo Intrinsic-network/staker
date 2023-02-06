@@ -5,7 +5,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.0.0",
+  "version": "1.2.0",
   "keywords": [
     "intrinsic",
     "liquidity mining"
@@ -28,7 +28,7 @@
   "dependencies": {
     "@openzeppelin/contracts": "3.4.1-solc-0.7-2",
     "@intrinsic-network/core": "1.0.0",
-    "@intrinsic-network/periphery": "1.0.1"
+    "@intrinsic-network/periphery": "1.2.0"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
@@ -69,7 +69,7 @@
     "prettier:check": "prettier-check contracts/**/*.sol test/**/*.ts types/*.ts",
     "size-contracts": "hardhat compile && hardhat size-contracts",
     "test": "hardhat test",
-    "clear-cache": "rm -rf artifacts/ cache/ typechain/",
+    "clean": "rm -rf artifacts/ cache/ typechain/",
     "coverage": "RUN_COVERAGE=1 hardhat coverage"
   }
 }

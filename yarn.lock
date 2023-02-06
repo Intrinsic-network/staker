@@ -734,10 +734,10 @@
   resolved "https://registry.yarnpkg.com/@intrinsic-network/core/-/core-1.0.0.tgz#17b2f075221900d96463361639760bb28f77dc3b"
   integrity sha512-svPp+RPeSmf3X8IIxAWFCQpWBX1ZuaH9+xURYXodoeGaZhqUs+XgOv3GkgTwLdyzTrbjmZHx/p1Qr8pQrnv0Hw==
 
-"@intrinsic-network/periphery@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@intrinsic-network/periphery/-/periphery-1.0.1.tgz#d85ff97cb0065e90ad0da29fdd93be4d13cbc114"
-  integrity sha512-beYSY0+AkUHUygiJza/eJVdM7H4PrYIg0gzOLjp70QDB7DGDe5sy+C5j0yj2aRBAlITdV8F3UeSWQQOfjS+jhg==
+"@intrinsic-network/periphery@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@intrinsic-network/periphery/-/periphery-1.2.0.tgz#8281bc92dc6a7b27736b1c6f81dc0bc77d3607f1"
+  integrity sha512-T6aMUN79N/e8vj7TOemn3qba+kosz5E9GmLLZ0ZET95YTNBv1fiR9GPsZVqSEu/sardpqaZMFPqKxrkq1P1cuw==
   dependencies:
     "@intrinsic-network/core" "1.0.0"
     "@openzeppelin/contracts" "3.4.1-solc-0.7-2"
