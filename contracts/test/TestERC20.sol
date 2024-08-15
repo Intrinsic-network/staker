@@ -2,7 +2,7 @@
 // intrinsic-core/contracts/test/TestERC20.sol
 pragma solidity =0.7.6;
 
-import '@intrinsic-network/core/contracts/interfaces/IERC20Minimal.sol';
+import '@intrinsic-finance/core/contracts/interfaces/IERC20Minimal.sol';
 
 contract TestERC20 is IERC20Minimal {
     mapping(address => uint256) public override balanceOf;

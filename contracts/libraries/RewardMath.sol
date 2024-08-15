@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity =0.7.6;
 
-import '@intrinsic-network/core/contracts/libraries/FullMath.sol';
+import '@intrinsic-finance/core/contracts/libraries/FullMath.sol';
 import '@openzeppelin/contracts/math/Math.sol';
 
 /// @title Math for computing rewards

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity >=0.6.0;
 
-import '@intrinsic-network/periphery/contracts/libraries/TransferHelper.sol';
+import '@intrinsic-finance/periphery/contracts/libraries/TransferHelper.sol';
 import '@openzeppelin/contracts/utils/Address.sol';
 
 library TransferHelperExtended {
