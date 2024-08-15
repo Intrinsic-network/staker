@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity =0.7.6;
 
-import '@intrinsic-network/periphery/contracts/interfaces/INonfungiblePositionManager.sol';
-import '@intrinsic-network/core/contracts/interfaces/IIntrinsicFactory.sol';
-import '@intrinsic-network/core/contracts/interfaces/IIntrinsicPool.sol';
+import '@intrinsic-finance/periphery/contracts/interfaces/INonfungiblePositionManager.sol';
+import '@intrinsic-finance/core/contracts/interfaces/IIntrinsicFactory.sol';
+import '@intrinsic-finance/core/contracts/interfaces/IIntrinsicPool.sol';
 
-import '@intrinsic-network/periphery/contracts/libraries/PoolAddress.sol';
+import '@intrinsic-finance/periphery/contracts/libraries/PoolAddress.sol';
 
 /// @notice Encapsulates the logic for getting info about a NFT token ID
 library NFTPositionInfo {

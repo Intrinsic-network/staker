@@ -729,17 +729,17 @@
     "@ethersproject/properties" "^5.1.0"
     "@ethersproject/strings" "^5.1.0"
 
-"@intrinsic-network/core@1.0.0":
+"@intrinsic-finance/core@1.0.0":
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@intrinsic-network/core/-/core-1.0.0.tgz#17b2f075221900d96463361639760bb28f77dc3b"
-  integrity sha512-svPp+RPeSmf3X8IIxAWFCQpWBX1ZuaH9+xURYXodoeGaZhqUs+XgOv3GkgTwLdyzTrbjmZHx/p1Qr8pQrnv0Hw==
+  resolved "https://registry.yarnpkg.com/@intrinsic-finance/core/-/core-1.0.0.tgz#1d75225da7dbcedd5e852a428e68355fbcbb2658"
+  integrity sha512-Zoa2hKhSalNl3gQYlGSEaKv7G81Q1nZG14HsqIRUoUsTPN5gxNLtt+/XKntoEscjEyAnezgtxce8tpxDqorhhw==
 
-"@intrinsic-network/periphery@1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@intrinsic-network/periphery/-/periphery-1.2.0.tgz#8281bc92dc6a7b27736b1c6f81dc0bc77d3607f1"
-  integrity sha512-T6aMUN79N/e8vj7TOemn3qba+kosz5E9GmLLZ0ZET95YTNBv1fiR9GPsZVqSEu/sardpqaZMFPqKxrkq1P1cuw==
+"@intrinsic-finance/periphery@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@intrinsic-finance/periphery/-/periphery-1.0.0.tgz#dce9926bd640d39c18ac8a324c621e417a07a8db"
+  integrity sha512-Gx0MLH9NDk4qVtg6Jzg/InR14yBa4tbYMLysFUUTCXX3nRhMnai0paEVL/+0Q5lEkPcpRZQqphsmYgCZW0J6yg==
   dependencies:
-    "@intrinsic-network/core" "1.0.0"
+    "@intrinsic-finance/core" "1.0.0"
     "@openzeppelin/contracts" "3.4.1-solc-0.7-2"
     "@uniswap/lib" "^4.0.1-alpha"
     "@uniswap/v2-core" "1.0.1"

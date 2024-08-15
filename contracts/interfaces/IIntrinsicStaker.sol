@@ -4,12 +4,12 @@ pragma abicoder v2;
 
 import '@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol';
 
-import '@intrinsic-network/core/contracts/interfaces/IIntrinsicFactory.sol';
-import '@intrinsic-network/core/contracts/interfaces/IIntrinsicPool.sol';
-import '@intrinsic-network/core/contracts/interfaces/IERC20Minimal.sol';
+import '@intrinsic-finance/core/contracts/interfaces/IIntrinsicFactory.sol';
+import '@intrinsic-finance/core/contracts/interfaces/IIntrinsicPool.sol';
+import '@intrinsic-finance/core/contracts/interfaces/IERC20Minimal.sol';
 
-import '@intrinsic-network/periphery/contracts/interfaces/INonfungiblePositionManager.sol';
-import '@intrinsic-network/periphery/contracts/interfaces/IMulticall.sol';
+import '@intrinsic-finance/periphery/contracts/interfaces/INonfungiblePositionManager.sol';
+import '@intrinsic-finance/periphery/contracts/interfaces/IMulticall.sol';
 
 /// @title Intrinsic Staker Interface
 /// @notice Allows staking nonfungible liquidity tokens in exchange for reward tokens

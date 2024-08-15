@@ -8,12 +8,12 @@ import './libraries/RewardMath.sol';
 import './libraries/NFTPositionInfo.sol';
 import './libraries/TransferHelperExtended.sol';
 
-import '@intrinsic-network/core/contracts/interfaces/IIntrinsicFactory.sol';
-import '@intrinsic-network/core/contracts/interfaces/IIntrinsicPool.sol';
-import '@intrinsic-network/core/contracts/interfaces/IERC20Minimal.sol';
+import '@intrinsic-finance/core/contracts/interfaces/IIntrinsicFactory.sol';
+import '@intrinsic-finance/core/contracts/interfaces/IIntrinsicPool.sol';
+import '@intrinsic-finance/core/contracts/interfaces/IERC20Minimal.sol';
 
-import '@intrinsic-network/periphery/contracts/interfaces/INonfungiblePositionManager.sol';
-import '@intrinsic-network/periphery/contracts/base/Multicall.sol';
+import '@intrinsic-finance/periphery/contracts/interfaces/INonfungiblePositionManager.sol';
+import '@intrinsic-finance/periphery/contracts/base/Multicall.sol';
 
 /// @title Intrinsic canonical staking interface
 contract IntrinsicStaker is IIntrinsicStaker, Multicall {
